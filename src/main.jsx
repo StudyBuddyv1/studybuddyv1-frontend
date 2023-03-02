@@ -3,6 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Import the pages routes
 import { AltStudent, Mentor, RegularStudent } from "./pages";
@@ -21,6 +22,7 @@ import { MentorRegister } from "./pages/auth/mentor";
 import Landing from './pages/landing/landing';
 
 import Layout from './pages/dashboard/layout/layout'	
+import ResNavbar from './components/ResNavbar';
 
 
 // set up router using createBrowserRouter

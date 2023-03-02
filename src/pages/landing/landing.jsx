@@ -19,11 +19,13 @@ import pieIcon from '../../assets/icons/pie.png'
 import pythonIcon from '../../assets/icons/python.png'
 
 import IconSquare from '../../assets/general/iconsquare.webp'
+import ResNavbar from '../../components/ResNavbar'
 
 const Landing = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
+      <ResNavbar />
       <div>
         <div className={landingPageStyles['intro-area']}>
           <h1>Getting answers made easy for you</h1>
@@ -51,7 +53,6 @@ const Landing = () => {
             className={`${landingPageStyles['decor-box']} ${landingPageStyles['decor-box-1']}`}
           ></div>
           <div className={landingPageStyles['about-us-image']}>
-            {/* <img src="/Team-demonstration.png" alt="" /> */}
             <img src={heroImage2} alt='' />
           </div>
           <div
@@ -164,10 +165,10 @@ const Landing = () => {
               to interact with your circle members as a group
             </p>
           </div>
-          <button>
-            <a href='/regularstudent/login'>Get Started</a>
-          </button>
         </div>
+        <button className={landingPageStyles['benefits-button']}>
+          <a href='/regularstudent/login'>Get Started</a>
+        </button>
       </div>
       <div className={landingPageStyles['outro-area']}>
         <div className={landingPageStyles['icon-boxes-area']}>

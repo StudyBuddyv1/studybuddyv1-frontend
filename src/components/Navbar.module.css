@@ -16,7 +16,6 @@
 
 .brand-logo img {
     width: 120px;
-    /* filter: invert(100%)  */
 }
 
 .nav-paths {
@@ -35,7 +34,7 @@
     color: white;
 }
 
-.get-started-btn{
+.get-started-btn {
     padding: 14px 40px;
     color: #fff;
     background-color: var(--secondary-clr-lt-blue);
@@ -47,7 +46,105 @@
     font-family: inherit;
 }
 
-.get-started-btn:hover{
-color: var(--secondary-clr-lt-blue);
-background-color: white;
+.get-started-btn:hover {
+    color: var(--secondary-clr-lt-blue);
+    background-color: white;
+}
+
+
+.register-options {
+    z-index: 20;
+    position: absolute;
+    top: 65px;
+    right: 200px;
+    background-color: white;
+    box-shadow: 0px 0px 2px 0.2px;
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+}
+
+.get-started-btn:hover+.register-options {
+    display: inline;
+}
+
+.register-options a {
+    color: black;
+}
+
+.register-options:hover {
+    display: inline;
+}
+
+.register-options ul {
+    padding: 0;
+}
+
+.register-options li {
+    /* background-color: purple; */
+    width: 250px;
+    padding: 10px 0;
+    border-bottom: 0.5px solid var(--neutral-clr-grey-2);
+}
+
+.register-options li:last-child {
+    border-bottom: none;
+}
+
+.register-options a:hover {
+    color: #222233;
+}
+
+.register-options ul {
+    list-style: none;
+}
+
+@media only screen and (min-width: 600px) and (max-width:992px) {
+    .get-started-btn {
+        display: none;
+    }
+
+    .nav-paths {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        position: relative;
+        top: 100px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 2px 0.2px;
+        margin: -60px 0;
+    }
+
+    .nav-paths a {
+        text-decoration: none;
+        color: var(--neutral-clr-grey-2);
+        /* margin: 20px 0; */
+        padding: 5px 20px;
+        color: black;
+        border-bottom: 0.5px solid var(--neutral-clr-grey-2);
+    }
+
+    .nav-paths a:nth-child(3) {
+        border-bottom: none;
+    }
+
+    .nav-paths a:nth-child(4) {
+        border-bottom: none;
+    }
+}
+
+@media only screen and (max-width:600px){
+
+    .main-nav {
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: var(--InterThin);
+        z-index: 100;
+    }
+    .brand-logo img {
+        width: 90px;
+    }  
 }

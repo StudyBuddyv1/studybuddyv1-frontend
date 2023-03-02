@@ -7,7 +7,7 @@ import mainFooterStyles from './Footer.module.css'
 const Footer = () => {
     return (
         <footer className={mainFooterStyles['main-footer']}>
-            <div className={mainFooterStyles['']}>
+            <div className={mainFooterStyles['brand-container']}>
                 <img src="src\assets\general\Authlogo.png" alt="" />
                 <div className={mainFooterStyles['sm-container']}>
                     <div className={mainFooterStyles['sm-link-container']}>
@@ -26,21 +26,21 @@ const Footer = () => {
                         <FontAwesomeIcon icon={faTwitter} />
                     </div>
                 </div>
-                <p>© 2022 - 2023</p>
+                <p className={mainFooterStyles['copyright-text']}>© 2022 - 2023</p>
             </div>
-            <div className={mainFooterStyles['main-footer-list']}>
+            <div className={`${mainFooterStyles['main-footer-list']} ${mainFooterStyles['product-footer-list']} `}>
                 <h3>Product</h3>
                 <p>For AltSchoolers</p>
                 <p>For Instructors</p>
                 <p>For Mentors</p>
             </div>
-            <div className={mainFooterStyles['main-footer-list']}>
+            <div className={`${mainFooterStyles['main-footer-list']} ${mainFooterStyles['features-footer-list']} `}>
                 <h3>Features</h3>
                 <p>Feature</p>
                 <p>Feature</p>
                 <p>Feature</p>
             </div>
-            <div className={mainFooterStyles['main-footer-list']}>
+            <div className={`${mainFooterStyles['main-footer-list']} ${mainFooterStyles['company-footer-list']} `}>
                 <h3>Company</h3>
                 <p>Company</p>
                 <p>Company</p>
